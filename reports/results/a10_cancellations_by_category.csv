@@ -1,0 +1,16 @@
+category,orders_with_category,canceled,cancel_pct
+books_general_interest,511,7,1.37
+musical_instruments,628,8,1.27
+small_appliances,630,8,1.27
+unknown,1449,14,0.97
+consoles_games,1052,8,0.76
+toys,3861,28,0.73
+housewares,5875,37,0.63
+auto,3886,23,0.59
+sports_leisure,7701,45,0.58
+computers_accessories,6671,35,0.52
+baby,2874,15,0.52
+stationery,2311,12,0.52
+cool_stuff,3624,15,0.41
+luggage_accessories,1034,4,0.39
+health_beauty,8791,34,0.39

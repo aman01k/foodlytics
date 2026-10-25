@@ -1,0 +1,13 @@
+first_review,first_delivery,customers,repeat_rate
+1-2 stars,late,2509,0.01753686727779992
+1-2 stars,not delivered/unknown,848,0.02240566037735849
+1-2 stars,on time,4967,0.023958123615864708
+3 stars,late,395,0.027848101265822784
+3 stars,not delivered/unknown,79,0.0379746835443038
+3 stars,on time,4511,0.02460651740190645
+4-5 stars,late,930,0.02258064516129032
+4-5 stars,not delivered/unknown,172,0.040697674418604654
+4-5 stars,on time,42686,0.030337815677271236
+no review,late,93,0.0
+no review,not delivered/unknown,50,0.02
+no review,on time,327,0.024464831804281346

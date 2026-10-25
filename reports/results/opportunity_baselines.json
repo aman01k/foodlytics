@@ -1,0 +1,34 @@
+{
+  "baselines": {
+    "ltm_orders": 76124,
+    "ltm_valid_orders": 75343,
+    "ltm_gmv": 10368678.87,
+    "ltm_aov": 137.61967097142403,
+    "ltm_canceled": 409,
+    "ltm_unavailable": 367,
+    "ltm_canceled_gmv_observed": 60033.59,
+    "ltm_canceled_with_items": 317,
+    "ltm_failed_rate": 0.010193894172665651,
+    "ltm_late_orders": 5762,
+    "ltm_delivered_measured": 74206,
+    "ltm_late_rate": 0.07764870765167237,
+    "ltm_new_customers": 72760,
+    "ltm_late_first_orders": 5597,
+    "repeat_rate_365d": 0.0333743673916017,
+    "repeat_gmv_per_repeater": 141.33839069316528,
+    "repeat_orders_per_repeater": 1.1221522055259332,
+    "repeat_rate_first_on_time": 0.029205006572555293,
+    "repeat_rate_first_late": 0.01935319582378406
+  },
+  "discount": {
+    "opportunity": "4. Avoid unprofitable blanket discount",
+    "expected_incremental_contribution_per_eligible": -0.03904314053051321,
+    "eligible": 65627,
+    "expected_loss_avoided_per_campaign": 2562.2841835959903,
+    "evidence_type": "SIMULATED (assumption-driven)"
+  },
+  "assumptions": {
+    "contribution_margin": 0.15,
+    "variable_cost_per_order": 1.5
+  }
+}

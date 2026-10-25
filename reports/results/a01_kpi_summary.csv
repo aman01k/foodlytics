@@ -1,0 +1,2 @@
+total_orders,valid_orders,delivered_orders,canceled_orders,unavailable_orders,gmv,delivered_gmv,freight,payment_value_valid,payment_value_all,aov_gmv,aov_incl_freight,items_per_order,cancellation_rate,failed_order_rate,avg_approval_hours,median_delivery_days,avg_delivery_days,avg_handover_days,on_time_rate,avg_review_score,active_customers,first_day,last_day
+99092,97905,96211,580,602,13449529.68,13181027.13,2234177.06,15686469.07,15944480.57,137.37,160.19,1.141,0.00585,0.01193,10.31,10.21,12.54,3.21,0.9321,4.089,94703,2017-01-05,2018-08-31

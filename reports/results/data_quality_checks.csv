@@ -1,0 +1,21 @@
+check_name,failures,detail,status
+pk_orders_unique,0,duplicate order_id,PASS
+pk_items_unique,0,"duplicate (order_id, order_item_id)",PASS
+pk_payments_unique,0,duplicate payment pk,PASS
+pk_reviews_one_per_order,0,orders with >1 kept review,PASS
+fk_orders_customers,0,orders without customer,PASS
+fk_items_orders,0,items without order,PASS
+fk_items_products,0,items without product,PASS
+fk_items_sellers,0,items without seller,PASS
+fk_products_categories,0,products with untranslated category,PASS
+critical_nulls_orders,0,orders missing id/customer/status/purchase ts,PASS
+invalid_prices,0,price<=0 or freight<0,PASS
+delivered_before_purchase,0,delivered timestamp precedes purchase,PASS
+raw_clean_row_reconciliation,0,row-count difference raw vs clean for orders/items/payments/customers (must be 0: nothing dropped),PASS
+fct_orders_no_fanout,0,order fact must have exactly one row per order,PASS
+gmv_reconciles_to_items,0,SUM(order gmv) must equal SUM(item price),PASS
+payments_reconcile_to_table,0,SUM(order payment_value) must equal SUM(payments),PASS
+payment_vs_items_mismatch_share,0,share of orders where |payment - (price+freight)| > R$1: 0.252%,PASS
+customers_universe_matches,0,dim_customers must contain each customer with a valid order exactly once,PASS
+cohort_sizes_sum,0,cohort sizes must sum to customers acquired in window,PASS
+cohort_month0_is_100pct,0,every cohort must be 100% active in month 0,PASS

@@ -1,0 +1,56 @@
+# Dual light/dark theme. The in-app toggle (header, top-right) switches between them;
+# Streamlit's own Settings > Theme menu works too.
+[theme]
+primaryColor = "#E8590C"
+linkColor = "#2A78D6"
+showWidgetBorder = true
+showSidebarBorder = false
+baseRadius = "12px"
+buttonRadius = "999px"
+font = "'Inter':https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+headingFont = "'Inter':https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap"
+baseFontSize = 14
+headingFontSizes = ["30px", "21px", "17px", "15px", "14px", "12px"]
+headingFontWeights = [800, 700, 650, 600, 600, 500]
+metricValueFontWeight = 750
+linkUnderline = false
+greenColor = "#0CA30C"
+redColor = "#D03B3B"
+orangeColor = "#E8590C"
+blueColor = "#2A78D6"
+
+[theme.light]
+backgroundColor = "#F4F3EF"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#14213D"
+borderColor = "#E6E3DB"
+dataframeHeaderBackgroundColor = "#F1EFE9"
+chartCategoricalColors = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#6250d6", "#e34948"]
+
+[theme.dark]
+backgroundColor = "#0D1322"
+secondaryBackgroundColor = "#172036"
+textColor = "#E9ECF4"
+borderColor = "#26314D"
+dataframeHeaderBackgroundColor = "#1D2741"
+chartCategoricalColors = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767"]
+
+[theme.light.sidebar]
+backgroundColor = "#14213D"
+secondaryBackgroundColor = "#1E2D52"
+textColor = "#E9ECF4"
+borderColor = "#2C3C66"
+primaryColor = "#FF8A4C"
+
+[theme.dark.sidebar]
+backgroundColor = "#080D18"
+secondaryBackgroundColor = "#141C30"
+textColor = "#E9ECF4"
+borderColor = "#1E2843"
+primaryColor = "#FF8A4C"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

@@ -1,0 +1,139 @@
+{
+  "config": {
+    "n_eligible": 65627,
+    "treatment_share": 0.5,
+    "discount_pct": 0.1,
+    "baseline_conversion": 0.0031283095723014256,
+    "price_elasticity": 1.5,
+    "aov_uplift_treated": 0.0,
+    "contribution_margin": 0.15,
+    "variable_cost_per_order": 1.5,
+    "window_days": 60,
+    "seed": 42,
+    "extra_orders_rate": 0.050872093023255814,
+    "relative_lift_assumed": 0.15000000000000002
+  },
+  "calibration_source": "Historical Olist back-test (observed). Used only to calibrate the control arm.",
+  "is_synthetic": true,
+  "conversion": {
+    "control_rate": 0.0031389997866699175,
+    "treatment_rate": 0.003474126897056135,
+    "control_conversions": 103,
+    "treatment_conversions": 114,
+    "n_control": 32813,
+    "n_treatment": 32814,
+    "abs_lift": 0.00033512711038621726,
+    "abs_lift_ci": [
+      -0.0005432965321423695,
+      0.0012135507529148042
+    ],
+    "rel_lift": 0.1067623871175043,
+    "rel_lift_ci": [
+      -0.15173812332918557,
+      0.4440387045867358
+    ],
+    "z": 0.7477414441893828,
+    "p_value": 0.4546161277342834
+  },
+  "contribution_per_eligible": {
+    "control_mean": 0.06457099320391309,
+    "treatment_mean": 0.017699975620162126,
+    "diff": -0.046871017583750965,
+    "ci": [
+      -0.06781193329869266,
+      -0.025930101868809268
+    ],
+    "p_value": 1.1529281173886956e-05,
+    "boot_ci": [
+      -0.06780066954999087,
+      -0.027633055899974723
+    ]
+  },
+  "net_revenue_per_eligible": {
+    "control_mean": 0.4643013439795203,
+    "treatment_mean": 0.4156920826476504,
+    "diff": -0.04860926133186988,
+    "ci": [
+      -0.22718190625187576,
+      0.129963383588136
+    ],
+    "p_value": 0.5936742982967637,
+    "boot_ci": [
+      -0.22642266198609512,
+      0.12801088155447354
+    ]
+  },
+  "aov_converters": {
+    "control_mean": 140.88063106796113,
+    "treatment_mean": 128.81342105263158,
+    "diff": -12.06721001532955,
+    "ci": [
+      -54.75330080586722,
+      30.61888077520812
+    ],
+    "p_value": 0.5801555345480721,
+    "boot_ci": [
+      -52.751654477516645,
+      25.471633750638738
+    ]
+  },
+  "incremental_contribution_if_rolled_out": -3076.0042709688246,
+  "decision": {
+    "outcome_code": 3,
+    "decision": "NO RELIABLE IMPROVEMENT: do not launch (and contribution profit is significantly lower)",
+    "recommended_action": "No statistically reliable conversion lift at this sample size. Do not spend on the campaign; if the idea is still attractive, re-test with a design powered for the minimum lift that would be profitable.",
+    "conversion_significant": false,
+    "profit_ci_lower": -0.06781193329869266,
+    "profit_ci_upper": -0.025930101868809268
+  },
+  "break_even": {
+    "break_even_rel_lift": 2.625252816584859,
+    "break_even_conversion": 0.011340913088135118,
+    "break_even_abs_lift": 0.008212603515833692,
+    "control_unit_contribution": 17.394177461139893,
+    "treated_unit_contribution": 4.798059153713297
+  },
+  "unit_economics": {
+    "avg_order_value": 125.96118307426596,
+    "orders_per_converter": 1.0508720930232558
+  },
+  "expected_incremental_per_eligible": -0.03904314053051321,
+  "power": {
+    "assumed_rel_lift": 0.15000000000000002,
+    "n_per_arm_actual": 32813,
+    "n_per_arm_needed_for_assumed_lift": 238651,
+    "power_at_actual_n": 0.1798461007732999,
+    "mde_rel_lift_at_actual_n": 0.42839938993112736,
+    "profit_mde_per_eligible": 0.02992013944306064,
+    "sample_size_table": [
+      {
+        "relative_lift": 0.1,
+        "n_per_arm_for_80pct_power": 524858
+      },
+      {
+        "relative_lift": 0.15,
+        "n_per_arm_for_80pct_power": 238651
+      },
+      {
+        "relative_lift": 0.25,
+        "n_per_arm_for_80pct_power": 89728
+      },
+      {
+        "relative_lift": 0.5,
+        "n_per_arm_for_80pct_power": 24740
+      },
+      {
+        "relative_lift": 1.0,
+        "n_per_arm_for_80pct_power": 7279
+      },
+      {
+        "relative_lift": 2.625252816584859,
+        "n_per_arm_for_80pct_power": 1525
+      }
+    ]
+  },
+  "monte_carlo_outcome_shares": {
+    "2": 0.16,
+    "3": 0.84
+  }
+}
